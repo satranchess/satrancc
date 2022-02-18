@@ -28,15 +28,15 @@
                             <h1><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h1>
 
                             {% if post.video %}
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/{{ post.video }}" title="YouTube video player" frameborder="0" style="max-width:100%;margin-bottom:1rem;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/{{ post.video }}" title="YouTube video player" frameborder="0" style="max-width:100%;margin:1rem 0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             {% endif %}
 
                             {% if post.gorsel %}
-                            <img src="{{ post.gorsel }}" style="max-width:100%;margin-bottom:1rem;">
+                            <img src="{{ post.gorsel }}" style="max-width:100%;margin:1rem 0;">
                             {% endif %}
 
                             {% if post.diyagram %}
-                            <div class=" cbdiagram" data-size="400" data-fen="{{ post.fen }}" style="font-size:1.5rem;">
+                            <div class=" cbdiagram" data-size="400" data-fen="{{ post.diyagram }}" data-buttons="0" style="font-size:1.5rem;">
                             </div>
                             {% endif %}
 
