@@ -27,6 +27,8 @@
                         <div class="deets" itemscope itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
                             <h1><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h1>
 
+                            <p class="date"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time></p>
+
                             {% if post.video %}
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/{{ post.video }}" title="YouTube video player" frameborder="0" style="max-width:100%;margin:1rem 0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             {% endif %}
@@ -39,8 +41,6 @@
                             <div class=" cbdiagram" data-size="400" data-fen="{{ post.diyagram }}" data-buttons="0" style="font-size:1.5rem;">
                             </div>
                             {% endif %}
-
-                            <p class="date"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time></p>
 
                             <p class="">{% if post.description %}{{ post.description  | strip_html | strip_newlines | truncate: 120 }}{% else %}{{ post.content | strip_html | strip_newlines | truncate: 120 }}{% endif %}</p>
                         </div>
