@@ -29,10 +29,13 @@
                             <div class="gorsel">{{ post.gorsel }}</div>
                             {% endif %}
                             {% if post.diyagram %}
-                            <div class="diyagram">{{ post.diyagram }}></div>
+                            <div class="diyagram">{{ post.diyagram }}</div>
                             {% endif %}
                             {% if post.video %}
-                            <div class="diyagram">{{ post.video }}</div>
+                            <div class="video">
+                                <iframe src="https://www.youtube.com/embed/{{ post.video }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                                </iframe>
+                            </div>
                             {% endif %}
                             <h1><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h1>
                             <p class="date"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time></p>
