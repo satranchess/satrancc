@@ -23,18 +23,12 @@
                         <h2><span class="bb">{{ page.title }}</span></h2>
                     </lh>
                     {% for post in site.posts %}
-                    {% if post.gorsel %}
-                    <div class="gorsel">{{ post.gorsel }}</div>
-                    {% endif %}
-                    {% if post.diyagram %}
-                    <div class="diyagram">{{ post.diyagram }}</div>
-                    {% endif %}
+
                     {% if post.video %}
-                    <div class="video">
-                        <iframe src="https://www.youtube.com/embed/{{ post.video }}" width:'100%' title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-                        </iframe>
-                    </div>
+                    <iframe src="https://www.youtube.com/embed/{{ post.video }}" width:'100%' title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                    </iframe>
                     {% endif %}
+
                     <li>
                         <div class="deets" itemscope itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
                             <h1><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h1>
