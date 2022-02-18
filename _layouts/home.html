@@ -25,8 +25,10 @@
 
                     <li>
                         {% if post.video %}
-                        <iframe width="560" height="315" src="{{ post.video }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/{{ post.video }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         {% endif %}
+
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/9MUoyH0c1Ac" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
                         <div class="deets" itemscope itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
                             <h1><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h1>
