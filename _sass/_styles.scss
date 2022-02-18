@@ -658,7 +658,7 @@ header.site-header nav {
 
 /* Footer Stuff */
 .push {
-    height: $footerHeight/3 !important;
+    height: $footerHeight/4 !important;
 }
 
 footer {
@@ -667,9 +667,8 @@ footer {
     height: $footerHeight;
     font-size: $fsp;
     color: $white;
-    position: absolute;
-    bottom: 0;
-    clear: both;
+    position: relative;
+    margin-top: auto;
 
     // Contain that ish
     section {
