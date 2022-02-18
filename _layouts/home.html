@@ -29,7 +29,11 @@
                         {% endif %}
 
                         {% if post.gorsel %}
-                        <img src="{{ post.gorsel }}">
+                        <img src="{{ post.gorsel }}" style="max-width:100%;">
+                        {% endif %}
+
+                        {% if post.diyagram %}
+
                         {% endif %}
 
                         <div class="deets" itemscope itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
