@@ -667,9 +667,8 @@ footer {
     height: $footerHeight;
     font-size: $fsp;
     color: $white;
-    position: absolute;
-    bottom: 0;
-    clear: both;
+    position: relative;
+    margin-top: auto;
 
     // Contain that ish
     section {
