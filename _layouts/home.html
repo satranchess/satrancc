@@ -30,11 +30,11 @@
                             <p class="date"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time></p>
 
                             {% if post.video %}
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/{{ post.video }}" title="YouTube video player" frameborder="0" style="max-width:100%;margin:1rem 0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/{{ post.video }}" title="YouTube video player" frameborder="0" style="max-width:100%;margin-bottom:1rem;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             {% endif %}
 
                             {% if post.gorsel %}
-                            <img src="{{ post.gorsel }}" style="max-width:100%;margin:1rem 0;">
+                            <img src="{{ post.gorsel }}" style="max-width:100%;margin-bottom:1rem;">
                             {% endif %}
 
                             {% if post.diyagram %}
