@@ -55,15 +55,11 @@
                 <nav role="navigation">
                     <ul>
                         <li>
-                            <a href="/" title="{{ site.title }}">Home</a>
+                            <a href="/" title="{{ site.title }}">Ana Sayfa</a>
                         </li>
 
                         {% for page in site.pages %}
                         <li><a href="{{ site.url }}{{ page.url }}">{{ page.title }}</a></li>
-                        {% endfor %}
-
-                        {% for link in site.links %}
-                        <li><a href="{% if link.external %}{{ link.url }}{% else %}{{ site.url }}{{ link.url }}{% endif %}" {% if link.external %}target="_blank" {% endif %}>{{ link.title }}</a></li>
                         {% endfor %}
 
                     </ul>
