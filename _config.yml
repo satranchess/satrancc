@@ -29,6 +29,7 @@ github_username:  jekyll
 
 # Build settings
 remote-theme: ColeTownsend/Balzac-for-Jekyll
+markdown: kramdown
 plugins:
   - jekyll-feed
 

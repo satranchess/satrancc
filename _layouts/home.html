@@ -3,9 +3,7 @@
 <section class="article">
 
     {% if page.image.feature %}
-    <div class="overlay">
-        <h2>FIDE Master Nazmi Can Doğan ile satranç analizleri</h2>
-    </div>
+    <div class="overlay"></div>
     {% if page.image.feature contains 'https://' | escape or page.image.feature contains 'http://' | escape %}
     <div class="featured-image" style="background-image: url({{ page.image.feature }})"></div>
     {% else %}
