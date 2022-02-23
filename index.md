@@ -1,7 +1,8 @@
 ---
 layout: home
-title: "FM Nazmi Can Doğan"
+title: "Ana Sayfa"
 tags: [Jekyll, theme, responsive, blog, template]
+order: 1
 image:
   feature: banner.jpg
 ---
