@@ -25,12 +25,16 @@
 <link rel="stylesheet" href="{{ site.url }}/assets/css/entypo.css" media="all">
 
 <style>
-@font-face {
-    font-family: 'Chess Merida Unicode';
-    src: url("{{ site.url }}/assets/fonts/chess_merida_unicode.ttf");
-}
-.f {font-family:"Chess Merida Unicode"}
-</style>    
+    @font-face {
+        font-family: 'Chess Merida Unicode';
+        src: url("{{ site.url }}/assets/fonts/chess_merida_unicode.ttf");
+    }
+
+    .f {
+        font-family: "Chess Merida Unicode"
+    }
+
+</style>
 
 <!-- For all browsers -->
 <link rel="stylesheet" href="{{ site.url }}/assets/css/i.css">
@@ -65,6 +69,9 @@
                         <li><a href="{{ site.url }}{{ page.url }}">{{ page.title }}</a></li>
                         {% endfor %}
 
+                        {% for item in site.links.links.links %}
+                        <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+                        {% endfor %}
                     </ul>
                 </nav>
             </div>
