@@ -8,4 +8,3 @@ image:
 ---
 
 {% include tag.html %}
-
