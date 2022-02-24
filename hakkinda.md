@@ -2,7 +2,6 @@
 layout: post
 title: Hakkında
 description: Balzac is a new, fluid & responsive theme for Jekyll (and AnchorCMS). It's gloriously beautiful and suited to long form. Built on a SCSS foundation, it's organized and awesome.
-tags: [about, Jekyll, theme, responsive]
 menu: yes
 image:
   feature: soft-trees.jpg

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Devlerden Öğrenmek (1)"
+tag: haber
 date: 2022-02-16
 video: "Q6iMvQ-aBxQ"
 ---
