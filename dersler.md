@@ -7,4 +7,11 @@ image:
   feature: soft-trees.jpg
 ---
 
-afdfadfdffda
+{% for tag in site.tags %}
+  <h3>{{ tag[sample post] }}</h3>
+  <ul>
+    {% for post in tag[sample post] %}
+      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+{% endfor %}
