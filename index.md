@@ -14,7 +14,8 @@ image:
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 50vh;   
+        height: 50vh;
+        z-index: 9999;
     }
     .center p {
         color: white;
