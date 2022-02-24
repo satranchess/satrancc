@@ -6,19 +6,6 @@ image:
   feature: soft-trees.jpg
 ---
 
-{% for tag in site.tags %}
-  {% assign t = tag | first %}
-  {% assign posts = tag | last %}
-
-{{ t | downcase }}
-<ul>
-{% for post in posts %}
-  {% if post.tags contains t %}
-  <li>
-    <a href="{{ post.url }}">{{ post.title }}</a>
-    <span class="date">{{ post.date | date: "%B %-d, %Y"  }}</span>
-  </li>
-  {% endif %}
-{% endfor %}
-</ul>
+{% for post in site.tags.ders %}
+ <li><span>{{ post.date | date_to_string }}</span> &nbsp; <a href="{{ post.url }}">{{ post.title }}</a></li>
 {% endfor %}
