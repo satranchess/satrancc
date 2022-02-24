@@ -2,17 +2,15 @@
 layout: page
 title: "Dersler"
 menu: yes
+tag: ders
 image:
   feature: soft-trees.jpg
 ---
 
-<div>
+<ul class="tags">
 {% for tag in site.tags %}
-  <h3>{{ tag[blog] }}</h3>
-  <ul>
-    {% for post in tag[blog] %}
-      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
+  {% assign t = tag | first %}
+  {% assign posts = tag | last %}
+  <li>{{t | downcase | replace:" ","-" }} has {{ posts | size }} posts</li>
 {% endfor %}
-</div>
+</ul>
