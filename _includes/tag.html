@@ -1,0 +1,14 @@
+{% for tag in tags %}
+<ul>
+    {% for post in site.posts %}
+    {% if post.tags contains haber %}
+    <li>
+        <a href="{{ post.url }}">
+            {{ post.title }}
+            <small>{{ post.date | date_to_string }}</small>
+        </a>
+    </li>
+    {% endif %}
+    {% endfor %}
+</ul>
+{% endfor %}
