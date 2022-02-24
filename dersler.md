@@ -7,5 +7,5 @@ image:
 ---
 
 {% for post in site.tags.ders %}
- <li><span>{{ post.date | date_to_string }}</span> &nbsp; <a href="{{ post.url }}">{{ post.title }}</a></li>
+ <li><a href="{{ post.url }}">{{ post.title }}</a></li>
 {% endfor %}
