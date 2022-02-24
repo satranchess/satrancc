@@ -14,29 +14,8 @@
     <div class="featured-image" style="background-image: url({{ site.url }}/images/banner.jpg)"></div>
     {% endif %}
 
-    <style>
-        .center {
-            position: absolute;
-            top: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 60vh;
-            width: 100vw;
-            z-index: 999;
-        }
-
-        .center p {
-            color: white;
-            text-align: center;
-            font-family: 'Crimson Pro';
-            font-size: 2rem;
-        }
-
-    </style>
-
     <div class="center">
-        <p><i>FIDE Master</i> Nazmi Can Doğan ile satranç analizleri</p>
+        <p>{{ page.description }}</p>
     </div>
 
     <div id='bump'>
