@@ -3,8 +3,7 @@ layout: page
 title: Haberler
 description: Balzac is a new, fluid & responsive theme for Jekyll. The
 menu: yes
-image:
-  feature: soft-trees.jpg
+image: soft-trees.jpg
 ---
 
 {% for post in site.tags.haber %}

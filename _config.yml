@@ -32,11 +32,6 @@ remote-theme: ColeTownsend/Balzac-for-Jekyll
 markdown: kramdown
 plugins:
   - jekyll-feed
-  - jekyll-tagging
-
-tag_page_layout: page
-tag_page_dir: /
-tag_permalink_style: pretty
 
 # Exclude from processing.
 # The following items will not be processed, by default.

@@ -2,8 +2,7 @@
 layout: page
 title: "Dersler"
 menu: yes
-image:
-  feature: soft-trees.jpg
+image: soft-trees.jpg
 ---
 
 {% for post in site.tags.ders %}
