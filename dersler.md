@@ -2,12 +2,9 @@
 layout: page
 title: "Dersler"
 menu: yes
-image: soft-trees.jpg
 ---
 
-<section class="article archive">
-<article class="archive-wrap">
-    <ol class="post-list">
+<ol class="post-list">
 
 {% for post in site.tags.ders %}
 
@@ -57,5 +54,3 @@ image: soft-trees.jpg
                     </li>
                     {% endfor %}
                 </ol>
-            </article>
-        </section>
