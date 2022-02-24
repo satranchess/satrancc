@@ -7,6 +7,10 @@
 
 {% include graphs.html %}
 
+{% if site.tags != "" %}
+  {% include collecttags.html %}
+{% endif %}
+
 <link href="{{ site.url }}/feed.xml" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
 
 <!-- http://t.co/dKP3o1e -->
