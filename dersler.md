@@ -1,10 +1,11 @@
 ---
-layout: page
+layout: home
 title: "Dersler"
 menu: yes
+tagfeed: ders
 ---
 
-<ol class="post-list">
+<ul class="post-list">
 
 {% for post in site.tags.ders %}
 
@@ -53,4 +54,4 @@ menu: yes
                         </div>
                     </li>
                     {% endfor %}
-                </ol>
+                </ul>

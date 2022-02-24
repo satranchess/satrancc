@@ -23,6 +23,10 @@
             <article class="archive-wrap">
                 <ol class="post-list">
 
+                    {% if page.tagfeed %}
+                    {% for post in site.tags.{{ page.tagfeed }} %}
+
+                    {% else %}
                     {% for post in site.posts %}
 
                     <li>
@@ -71,6 +75,7 @@
                         </div>
                     </li>
                     {% endfor %}
+                    {% endif %}
                 </ol>
             </article>
         </section>

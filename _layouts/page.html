@@ -18,14 +18,62 @@
         <p>{{ page.title }}</p>
     </div>
 
-    <article class="wrap post">
+    <div id='bump'>
+        <section class="article archive">
+            <article class="archive-wrap">
+                <ol class="post-list">
 
-        {{ content }}
+                    {% for post in site.tags.{{ page.tagfeed }} %}
 
-        <!-- <a class="share" href="https://twitter.com/intent/tweet?text=&quot;{{ page.title }}&quot;%20{{ site.canonical }}{{ page.url }}%20via%20&#64;{{ site.owner.twitter }}" data-dnt="true">Share</a>
-      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>-->
+                    <li>
+                        <div class="deets" itemscope itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+                            <h1><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h1>
+                            <p class="date"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%d %m %Y" }}</time></p>
 
-    </article>
+                            {% if post.video %}
+                            <style>
+                                .embed-container {
+                                    position: relative;
+                                    padding-bottom: 56.25%;
+                                    height: 0;
+                                    overflow: hidden;
+                                    max-width: 100%;
+                                    margin-bottom: 1rem;
+                                }
+
+                                .embed-container iframe,
+                                .embed-container object,
+                                .embed-container embed {
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                    width: 100%;
+                                    height: 100%;
+                                }
+
+                            </style>
+                            <div class='embed-container'><iframe src='https://www.youtube.com/embed/{{ post.video }}' frameborder='0' allowfullscreen></iframe></div>
+                            {% endif %}
+
+                            {% if post.image %}
+                            <img src="{{ post.image }}" style="max-width:100%;margin-bottom:1rem;">
+                            {% endif %}
+
+                            {% if post.diagram %}
+                            <div style="margin-left:-3.5rem;">
+                                <div class=" cbdiagram" data-size="400" data-fen="{{ post.diagram }}" data-buttons="0" style="font-size:1.5rem;">
+                                </div>
+                            </div>
+                            {% endif %}
+
+                            <p class="">{% if post.description %}{{ post.description  | strip_html | strip_newlines | truncate: 120 }}{% else %}{{ post.content | strip_html | strip_newlines | truncate: 120 }}{% endif %}</p>
+                        </div>
+                    </li>
+                    {% endfor %}
+                </ol>
+            </article>
+        </section>
+    </div>
 </section>
 </div>
 
