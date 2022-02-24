@@ -8,7 +8,7 @@ image:
 ---
 
 {% for tag in site.tags %}
-  {% assign t = tag | first %}
+  {% assign t = haber | first %}
   {% assign posts = tag | last %}
 
 {{ t | downcase }}
