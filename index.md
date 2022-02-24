@@ -8,11 +8,12 @@ image:
 
 <style>
     .center {
+        position: absolute;
+        top:0;
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 50vh;
-        top:0;
+        height: 50vh;   
     }
     .center p {
         color: white;
