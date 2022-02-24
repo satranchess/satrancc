@@ -56,13 +56,13 @@
                             <div class='embed-container'><iframe src='https://www.youtube.com/embed/{{ post.video }}' frameborder='0' allowfullscreen></iframe></div>
                             {% endif %}
 
-                            {% if post.gorsel %}
-                            <img src="{{ post.gorsel }}" style="max-width:100%;margin-bottom:1rem;">
+                            {% if post.image %}
+                            <img src="{{ post.image }}" style="max-width:100%;margin-bottom:1rem;">
                             {% endif %}
 
-                            {% if post.diyagram %}
+                            {% if post.diagram %}
                             <div style="margin-left:-3.5rem;">
-                                <div class=" cbdiagram" data-size="400" data-fen="{{ post.diyagram }}" data-buttons="0" style="font-size:1.5rem;">
+                                <div class=" cbdiagram" data-size="400" data-fen="{{ post.diagram }}" data-buttons="0" style="font-size:1.5rem;">
                                 </div>
                             </div>
                             {% endif %}

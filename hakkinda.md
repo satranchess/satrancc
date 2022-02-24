@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: Hakkında
 description: Balzac is a new, fluid & responsive theme for Jekyll. It's
 menu: yes
