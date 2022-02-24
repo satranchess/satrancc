@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "DERSLER"
+title: "Dersler"
 tags: [blog, graphic design]
 menu: yes
 image:
@@ -8,9 +8,9 @@ image:
 ---
 
 {% for tag in site.tags %}
-  <h3>{{ tag[sample post] }}</h3>
+  <h3>{{ tag[blog] }}</h3>
   <ul>
-    {% for post in tag[sample post] %}
+    {% for post in tag[blog] %}
       <li><a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
   </ul>
