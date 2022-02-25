@@ -67,7 +67,7 @@
                     {% endif %}
 
                     <p class="">{% if post.description %}{{ post.description  | strip_html | strip_newlines | truncate: 240 }}{% else %}{{ post.content | strip_html | strip_newlines | truncate: 240 }}{% endif %}
-                        <button href="{{ site.url }}{{ post.url }}">⤴</button></p>
+                        <button onclick="location.href='{{ site.url }}{{ post.url }}'" type="button">>⤴</button></p>
                 </div>
             </li>
             {% endfor %}
