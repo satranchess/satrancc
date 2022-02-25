@@ -66,8 +66,8 @@
                     </div>
                     {% endif %}
 
-                    <p class="">{% if post.description %}{{ post.description  | strip_html | strip_newlines | truncate: 120 }}{% else %}{{ post.content | strip_html | strip_newlines | truncate: 120 }}{% endif %}</p>
-                    <span class="book"><a href="{{ site.url }}{{ post.url }}"><img src="{{ site.url }}{{ post.url }}/images/book.png"></a></span>
+                    <p class="">{% if post.description %}{{ post.description  | strip_html | strip_newlines | truncate: 120 }}{% else %}{{ post.content | strip_html | strip_newlines | truncate: 120 }}{% endif %}
+                        <span class="book"><a href="{{ site.url }}{{ post.url }}"><img src="{{ site.url }}{{ post.url }}/images/book.png"></a></span></p>
                 </div>
             </li>
             {% endfor %}
