@@ -67,11 +67,24 @@
                     {% endif %}
 
                     <p class="">{% if post.description %}{{ post.description  | strip_html | strip_newlines | truncate: 240 }}{% else %}{{ post.content | strip_html | strip_newlines | truncate: 240 }}{% endif %}
-                        <button onclick="location.href='{{ site.url }}{{ post.url }}'" type="button">>⤴</button></p>
+                        <button class="readlink" onclick="location.href='{{ site.url }}{{ post.url }}'" type="button">⤴</button></p>
                 </div>
             </li>
             {% endfor %}
             {% endif %}
+
+            <style>
+                .readlink {
+                    background: none;
+                    color: inherit;
+                    border: none;
+                    padding: 0;
+                    font: inherit;
+                    cursor: pointer;
+                    outline: inherit;
+                }
+
+            </style>
 
             {% if page.title == "Haberler" %}
             {% for post in site.tags.haber %}
