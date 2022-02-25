@@ -66,9 +66,8 @@
                     </div>
                     {% endif %}
 
-                    <p class="">{% if post.tagline %} {{ post.tagline }} {% else %} {{ post.description }} {% endif %}</p>
-
-                    <button class="readlink" onclick="location.href='{{ site.url }}{{ post.url }}'" type="button">⤴</button></p>
+                    <p class="">{% if post.tagline %} {{ post.tagline }} {% else %} {{ post.description }} {% endif %}
+                        <button class="readlink" onclick="location.href='{{ site.url }}{{ post.url }}'" type="button">⤴</button></p>
                 </div>
             </li>
             {% endfor %}
